@@ -9,8 +9,28 @@ $theme-colors: (
   max-width: 200px;
 }
 
-
-
-.left-column {
-  max-width: 400px !important;
+@media screen and (min-width: 576px) {
+  .w-sm {
+    width: 100% !important;
+  }
 }
+
+@media screen and (min-width: 768px) {
+  .w-md {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .w-lg {
+    width: 80% !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .w-xl {
+    width: 80% !important;
+  }
+}
+
+
