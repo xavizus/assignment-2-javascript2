@@ -9,6 +9,10 @@ $theme-colors: (
   max-width: 200px;
 }
 
+.mw-350px {
+  max-width: 350px !important;
+}
+
 @media screen and (min-width: 576px) {
   .w-sm {
     width: 100% !important;
