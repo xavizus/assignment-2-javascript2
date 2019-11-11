@@ -5,19 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Online Portfolio</title>
 </head>
 
 <body>
-    <h1 class="display-1">Hello World</h1>
-    <div class="alert alert-primary" role="alert">
-        This is a primary alert—check it out!
-    </div>
-    <blockquote class="blockquote">
-        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-    </blockquote>
 
+    <div class="row m-1 pt-2">
+        <div class="col-md-5 col-sm-12 col-lg-2 order-1">
+            <img id="profilePicture" src="./img/donkey.jpg" alt="Image of a donkey"
+                class="img-thumbnail border border-primary rounded-circle mx-auto mx-auto d-block mb-2">
+
+        </div>
+        <div class="col-md-7 col-sm-12 col-lg-9 order-3 order-md-3">
+            <h4 id="name" class="display-4 font-weight-bold">Stephan <br>&nbsp;Ljungros</h3>
+                <blockquote class="blockquote">
+                    <p id="title" class="blockquote-footer">Fullstack Open-source webbutvecklare</p>
+                </blockquote>
+        </div>
+        <div class="col-md-5 col-sm-12 col-lg-2 order-4 order-md-4 m">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="material-icons align-middle">mail</i>&nbsp;Stephan.ljungros@gmail.com</li>
+                        <li><i class="material-icons align-middle">phone</i>&nbsp;+46 707- 545 603</li>
+                        <li><i class="material-icons">navigation</i>
+                            <address class="d-inline-block">&nbsp;Elsa Beskows G 19<br>&nbsp;129 55 Hägersten</address>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7 col-sm-12 col-lg-9 order-3 order-md-5">
+            <h5 id="profileHeader" class="display-5 font-weight-bold">Profile</h5>
+            <p id="profileDescription" class="text-monospace">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Labore molestias at eaque doloribus cumque nulla eligendi omnis aut, rerum corrupti non harum, tempora
+                inventore saepe adipisci modi nisi fugit dolor repellat excepturi repudiandae soluta aliquam deserunt.
+                Libero quaerat expedita fugiat!</p>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 

@@ -2,3 +2,15 @@ $theme-colors: (
   //"primary": #FFF,
   "danger": #ff4136
 );
+
+
+#profilePicture {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+
+
+.left-column {
+  max-width: 400px !important;
+}
