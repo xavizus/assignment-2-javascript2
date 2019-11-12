@@ -1,7 +1,7 @@
 {
     "name": "assignment-2-javascript2",
     "version": "1.0.0",
-    "description": "",
+    "description": "Online Portfolio",
     "main": "webpack.config.js",
     "dependencies": {
         "bootstrap": "^4.3.1",
@@ -28,7 +28,7 @@
         "type": "git",
         "url": "git+https://github.com/xavizus/assignment-2-javascript2.git"
     },
-    "author": "",
+    "author": "Stephan Ljungros",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/xavizus/assignment-2-javascript2/issues"

@@ -1,3 +1,63 @@
 {
+    "contact": {
+        "firstName": "Stephan",
+        "lastName": "Ljungros",
+        "currentTitle": "Webbutvecklare Fullstack Open-source",
+        "mail": "stephan.ljungros@gmail.com",
+        "phone": "+46 707- 545 603",
+        "address": "Elsa Beskows G 23",
+        "zipCode": "129 55 Hägersten"
+    },
+
+    "education": [
+        {
+            "schoolName": "Nackademin",
+            "Programme":"Webbutvecklare Fullstack Open-source",
+            "ExaminationDate": "2021-05-31"
+        },
+        {
+            "schoolName": "IT-gymnasiet Södertörn",
+            "Programme":"IT-specifiation nätverk and nätverkssäkerhet",
+            "ExaminationDate": "2011-06-05"
+        }
+    ],
+
+    "profile": "Mitt mål har alltid varit att utvecklas och lära mig så mycket som möjligt för att kunna underlätta för både användare och administratörer av IT-system. Jag är intresserad av både hårdvara och mjukvara, detta i form av persondatorer, servrar och olika typer av programmering. \nMin yttersta dröm vore att starta eget- eller gå med i ett företag och där visionen är att utveckla system från användarens behov, istället för som det oftast är att utveckla system vad man tror användarens behov är. Där företaget har kundens fokus och har kunden som ledstjärna.\nMitt brinnande intresse för mjukvara och programmering gör att jag ständigt spenderar min fria tid på självstudier i olika områden, främst är det säkerhet och optimering som jag har intresserats för.\nEftersom att jag har erfarenhet från helpdesk och haft nära kontakt med användare så vet jag vad användarna har för behov och hur de uppfattar system som existerar idag.",
+    "experience": [
+        {
+            "company": "Nacka kommun",
+            "started": "2012-01-01",
+            "ended": "pågående",
+            "title": "Servicetekniker",
+            "shortDescrition": ""
+        },
+        {
+            "company": "Lexicon IT-konsult",
+            "started": "2011-07-18",
+            "ended":"2011-12-31",
+            "title": "Konsult",
+            "shortDescription": ""
+        }
+    ],
+
+    "skills": [
+        "Snabblärd",
+        "Flytande Svenska och Engelska i tal och skrift",
+        "Problemlösare",
+        "Lagspelare",
+        "Pedagogisk",
+        "Dyslexi, Jag ser det mer som en färdighet än funktionshinder, då det har hjälpt mig att bli mer analytisk"
+
+    ],
+    "certificates": [
+        {
+            "certificateName": "Microsoft Technology Associate: Networking Fundamentals",
+            "Examinationer": "Certiport"
+        },
+        {
+            "certificateName": "ITIL Foundation Examination",
+            "Examinationer": "Olingo Consulting AB"
+        }
+    ]
 
 }

@@ -5,6 +5,15 @@ $theme-colors: ( //"primary": #FFF,
     max-width: 200px;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
+.icon-image {
+    max-width: 24px !important;
+    max-height: 24px !important;
+}
+
 @media screen and (min-width: 576px) {
     .w-sm {
         width: 100% !important;
