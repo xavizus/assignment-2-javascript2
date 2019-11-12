@@ -19,8 +19,8 @@
         </div>
         <div class="col-sm-12 col-md-6 col-lg-7 col-xl-8 order-3 order-md-3 mx-auto">
             <div class="page-header text-sm-center text-md-left">
-                <h1>Stephan <br>&nbsp;Ljungros</h1>
-                <p class="text-muted">Fullstack Open-source webbutvecklare</p>
+                <h1 id="firstName"></h1><h1 id="lastName"></h1>
+                <p class="text-muted" id="currentTitle"></p>
             </div>
             <hr/>
         </div>
@@ -31,21 +31,21 @@
 
                 <div class="list-group list-group-flush">
                     <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                        <h6><i class="material-icons align-middle">mail</i>&nbsp;Stephan.ljungros@gmail.com</h6>
+                        <h6><i class="material-icons align-middle">mail</i>&nbsp;<span id="mail"></span></h6>
                     </a>
                     <a href="tel:+46707545603 " class="list-group-item list-group-item-action flex-column align-items-start">
-                        <h6><i class="material-icons align-middle">phone</i>&nbsp;+46 707- 545 603</h6>
+                        <h6><i class="material-icons align-middle">phone</i>&nbsp;<span id="phone"></span></h6>
                     </a>
 
-                    <a href="https://www.google.com/maps/search/?api=1&query=Elsa Beskows G 19 129 55 Hägersten" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <a id="findMe" href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                         <i class="material-icons">navigation</i>
-                        <address class="d-inline-block">&nbsp;Elsa Beskows G 19<br>&nbsp;129 55 Hägersten</address></a>
+                        <address class="d-inline-block"><span id="address"></span> <br> <span id="zipCode"></span></address></a>
                 </div>
             </div>
             <hr/>
             <div class="text-center mt-3">
                 <h5>Education</h5>
-                <div class="list-group list-group-flush">
+                <div id="educationList" class="list-group list-group-flush">
                     <li href="#" class="list-group-item flex-column align-items-start" data-toggle="tooltip" data-placement="right" data-html="true" title="Ongoing">
                         <h6>Nackademin <br>
                             <p class="text-muted">Webbutvecklare Fullstack open source</p>

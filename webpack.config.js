@@ -1,9 +1,16 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const cssLoader = {
+    loader: 'css-loader',
+    options: {
+        minimize: true,
+    },
+}
+
 module.exports = {
     mode: 'production',
-    entry: './src/js/index.js',
+    entry: ['./src/js/index.js' ],
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
@@ -14,9 +21,6 @@ module.exports = {
             test: /\.s[ac]ss$/i,
             use: [{
                     loader: MiniCssExtractPlugin.loader,
-                    options: {
-                        publicPath: path.resolve(__dirname, 'dist'),
-                    },
                 },
                 'css-loader',
                 'sass-loader',
@@ -26,10 +30,10 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            // Options similar to the same options in webpackOptions.output
-            // both options are optional
             filename: 'styles.css',
-            chunkFilename: '1.css',
         }),
     ],
+    performance: {
+        hints: process.env.NODE_ENV === 'production' ? "warning" : false
+      },
 };
