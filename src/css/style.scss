@@ -1,40 +1,42 @@
-$theme-colors: (
-  //"primary": #FFF,
-  "danger": #ff4136
-);
-
-
+$theme-colors: ( //"primary": #FFF,
+"danger": #ff4136);
 #profilePicture {
-  max-height: 200px;
-  max-width: 200px;
-}
-
-.mw-350px {
-  max-width: 350px !important;
+    max-height: 200px;
+    max-width: 200px;
 }
 
 @media screen and (min-width: 576px) {
-  .w-sm {
-    width: 100% !important;
-  }
+    .w-sm {
+        width: 100% !important;
+    }
+    .mw-sm {
+        max-width: 100% !important;
+    }
 }
 
 @media screen and (min-width: 768px) {
-  .w-md {
-    width: 100% !important;
-  }
+    .w-md {
+        width: 100% !important;
+    }
+    .mw-md {
+        max-width: 100% !important;
+    }
 }
 
 @media screen and (min-width: 992px) {
-  .w-lg {
-    width: 80% !important;
-  }
+    .w-lg {
+        width: 80% !important;
+    }
+    .mw-lg {
+        max-width: 350px !important;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-  .w-xl {
-    width: 80% !important;
-  }
+    .w-xl {
+        width: 80% !important;
+    }
+    .mw-xl {
+        max-width: 350px !important;
+    }
 }
-
-

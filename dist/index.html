@@ -6,46 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Online Portfolio</title>
 </head>
 
 <body>
 
     <div class="row pt-2 w-sm w-md w-lg w-xl m-auto border border-top-0 border-primary rounded-bottom pb-2 mb-2">
-        <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4 order-1 mw-350px">
-            <img id="profilePicture" src="./img/donkey.jpg" alt="Image of a donkey"
-                class="img-thumbnail border border-primary rounded-circle mx-auto mx-auto d-block mb-2">
+        <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4 order-1 mw-350px mx-auto">
+            <img id="profilePicture" src="./img/donkey.jpg" alt="Image of a donkey" class="img-thumbnail border border-primary rounded-circle mx-auto mx-auto d-block mb-2">
 
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-7 col-xl-8 order-3 order-md-3">
-            <h4 id="name" class="display-4 font-weight-bold">Stephan <br>&nbsp;Ljungros</h3>
-                <blockquote class="blockquote">
-                    <p id="title" class="blockquote-footer">Fullstack Open-source webbutvecklare</p>
-                </blockquote>
+        <div class="col-sm-12 col-md-6 col-lg-7 col-xl-8 order-3 order-md-3 mx-auto">
+            <div class="page-header text-sm-center text-md-left">
+                <h1>Stephan <br>&nbsp;Ljungros</h1>
+                <p class="text-muted">Fullstack Open-source webbutvecklare</p>
+            </div>
+            <hr/>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4 order-4 order-md-4 mw-350px">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Contact</h5>
-                    <ul class="list-unstyled">
-                        <li><i class="material-icons align-middle">mail</i>&nbsp;Stephan.ljungros@gmail.com</li>
-                        <li><i class="material-icons align-middle">phone</i>&nbsp;+46 707- 545 603</li>
-                        <li><i class="material-icons">navigation</i>
-                            <address class="d-inline-block">&nbsp;Elsa Beskows G 19<br>&nbsp;129 55 Hägersten</address>
-                        </li>
-                    </ul>
+        <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4 order-4 order-md-4 mw-350px mx-auto">
+            <hr/>
+            <div class="text-center">
+                <h5>Contact</h5>
+
+                <div class="list-group list-group-flush">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <h6><i class="material-icons align-middle">mail</i>&nbsp;Stephan.ljungros@gmail.com</h6>
+                    </a>
+                    <a href="tel:+46707545603 " class="list-group-item list-group-item-action flex-column align-items-start">
+                        <h6><i class="material-icons align-middle">phone</i>&nbsp;+46 707- 545 603</h6>
+                    </a>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Elsa Beskows G 19 129 55 Hägersten" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <i class="material-icons">navigation</i>
+                        <address class="d-inline-block">&nbsp;Elsa Beskows G 19<br>&nbsp;129 55 Hägersten</address></a>
+                </div>
+            </div>
+            <hr/>
+            <div class="text-center mt-3">
+                <h5>Education</h5>
+                <div class="list-group list-group-flush">
+                    <li href="#" class="list-group-item flex-column align-items-start" data-toggle="tooltip" data-placement="right" data-html="true" title="Ongoing">
+                        <h6>Nackademin <br>
+                            <p class="text-muted">Webbutvecklare Fullstack open source</p>
+                        </h6>
+                    </li>
+                    <li href="#" class="list-group-item flex-column align-items-start" data-toggle="tooltip" data-placement="right" data-html="true" title="Examination year: 2011">
+                        <h6>IT-gymnasiet Södertörn<br>
+                            <p class="text-muted">IT-specifikation i nätverkssäkerhet och nätverk</p>
+                        </h6>
+                    </li>
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-7 col-xl-8 order-3 order-md-5">
-            <h5 id="profileHeader" class="display-5 font-weight-bold">Profile</h5>
-            <p id="profileDescription" class="text-monospace">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Labore molestias at eaque doloribus cumque nulla eligendi omnis aut, rerum corrupti non harum, tempora
-                inventore saepe adipisci modi nisi fugit dolor repellat excepturi repudiandae soluta aliquam deserunt.
-                Libero quaerat expedita fugiat!</p>
+        <div class="col-sm-12 col-md-6 col-lg-7 col-xl-8 order-3 order-md-5 text-sm-center text-md-left">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <ul class="nav flex-column nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="skills-tab" data-toggle="tab" href="#skills" role="tab" aria-controls="skills" aria-selected="false">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="certificates-tab" data-toggle="tab" href="#certificates" role="tab" aria-controls="certificates" aria-selected="false">Certificates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="projects-tab" data-toggle="tab" href="#projects" role="tab" aria-controls="projects" aria-selected="false">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor sit amet.</div>
+                        <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">Lorem ipsum dolor sit amet.</div>
+                        <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">Lorem ipsum dolor sit amet.</div>
+                        <div class="tab-pane fade" id="certificates" role="tabpanel" aria-labelledby="certificates-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quibusdam! Omnis alias quibusdam voluptatum veniam beatae nisi perferendis itaque perspiciatis blanditiis vero molestiae tenetur, voluptatibus autem repudiandae vitae
+                            doloribus soluta sint at impedit reiciendis facere quidem. Laborum deserunt quisquam doloribus velit perspiciatis esse quod, amet quibusdam quae. Quos ullam sed tempore magnam, in quidem. Earum maiores dolore animi, aliquid
+                            a, eius explicabo ea vitae, sunt magnam exercitationem facere doloremque. Non nostrum accusantium obcaecati animi voluptatem, beatae voluptates quis amet culpa temporibus atque omnis, eaque ipsa totam mollitia necessitatibus
+                            unde officia ab ex reprehenderit laboriosam nemo consectetur id cum? Iste, unde?</div>
+                        <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quibusdam! Omnis alias quibusdam voluptatum veniam beatae nisi perferendis itaque perspiciatis blanditiis vero molestiae tenetur, voluptatibus autem repudiandae vitae
+                            doloribus soluta sint at impedit reiciendis facere quidem. Laborum deserunt quisquam doloribus velit perspiciatis esse quod, amet quibusdam quae. Quos ullam sed tempore magnam, in quidem. Earum maiores dolore animi, aliquid
+                            a, eius explicabo ea vitae, sunt magnam exercitationem facere doloremque. Non nostrum accusantium obcaecati animi voluptatem, beatae voluptates quis amet culpa temporibus atque omnis, eaque ipsa totam mollitia necessitatibus
+                            unde officia ab ex reprehenderit laboriosam nemo consectetur id cum? Iste, unde?</div>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
-    <script src="main.js"></script>
+    </div>
+    <script src="main.js "></script>
 </body>
 
 </html>
