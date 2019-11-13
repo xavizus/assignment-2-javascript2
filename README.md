@@ -9,27 +9,27 @@ Sidan ska innehålla följande delar
 
 Ni ska implementera ett visst antal tillgänglighetskrav. (https://www.w3.org/WAI/WCAG21/quickref/) Välj bland följande:
 
-- [ ] 1.1.1 Non-text Content
-- [ ] 1.4.1 Use of Color
-- [ ] 1.4.3 Contrast (Minimum)
+- [x] 1.1.1 Non-text Content (Allt Icke-text har alt-text förutom dekorativa element)
+- [x] 1.4.1 Use of Color (Länkar på hover ändrar färg och visar att man kan göra något med den)
+- [x] 1.4.3 Contrast (Minimum) Det som är närmast att inte klara kontrasten är class: text-muted (#6c757d), mot bakgrund. Skillnaden är 4.68:1, där WCAG säger att ration måste minst vara 3:1, men 4:1 är rekommenderat.
 - [ ] 1.4.4 Resize text
-- [x] 1.4.5 Images of Text
-- [ ] 1.4.12 Text Spacing
-- [ ] 3.2.1 On Focus
+- [x] 1.4.5 Images of Text (Har ingen bild med text, automatiskt godkänd?)
+- [x] 1.4.12 Text Spacing (Osäker om jag förstår det rätt, men du kan ändra storleken på texten på, Linjehöjd , avstånd efter stycken, Bokstavsavstånd  och Ordavstånd för det minimala utan att utseendet på webbplatsen påverkas)
+- [x] 3.2.1 On Focus (Inget oväntat sker när ett objekt får fokus. Ex. om du klickar på mail-adressen så öppnas mail klienten)
 
 G-krav:
 - [x] All CSS ska göras i SASS/LESS.
 - [x] Göra någon DOM-manipulering i jQuery.
 - [x] Sidan ska använda Bootstrap.
-- [ ] Ni ska tematisera Bootstrap mha Scss.
+- [x] Ni ska tematisera Bootstrap mha Scss.
 - [x] Sidan ska använda en valfri Bootstrap-komponent.
-- [ ] Implementera minst 2 tillgänglighetskrav.
+- [x] Implementera minst 2 tillgänglighetskrav.
 
 VG-krav:
 - [x] Ni ska göra en SPA (Single Page Application) (https://en.wikipedia.org/wiki/Single-page_application) med hjälp av jQuery.
 - [x] Användaren ska kunna välja språk.
 - [ ] All kod (html, css, js) ska vara välskriven, korrekt indenterad och kommenterad.
-- [ ] Implementera minst 5 tillgänglighetskrav.
+- [x] Implementera minst 5 tillgänglighetskrav.
 
 Inlämning sker genom ihopzippad fil med allt som krävs för att projektet ska vara direkt körbart.
 
