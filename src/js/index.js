@@ -36,6 +36,7 @@ async function main() {
  * @param {class Settings} settings 
  */
 function updateLanguageContent(settings) {
+
     let contactData = settings.contact;
 
     //Loop through all keys in contactData
@@ -57,6 +58,76 @@ function updateLanguageContent(settings) {
 
     // Change href-attribute with the address (Used to link to Google maps.)
     $("#findMe").attr("href", `https://www.google.com/maps/search/?api=1&query=${contactData.address} ${contactData.zipCode}`);
+
+    let educationData = settings.education;
+
+    // Set education Heading
+    $("#educationHeading").text(educationData.educationHeading);
+
+    // Clear all content of id 
+    $("#educationList").empty();
+
+    //for each education
+    for(let education of educationData.educations) {
+        let educationHTMLItem = `
+        <li class="list-group-item flex-column align-items-start" data-toggle="tooltip"
+        data-placement="right" data-html="true" title="${education.ExaminationDate}">
+            <h6>${education.schoolName}<br>
+                <p class="text-muted">${education.Programme}</p>
+            </h6>
+        </li>
+        `;
+        // Append id with list item
+        $('#educationList').append(educationHTMLItem);
+    }
+
+    
+    let tabListData = settings.tabList;
+
+    for(let tabListKey in tabListData) {
+        let shortTabList = tabListData[tabListKey];
+        $(`#${tabListKey}-tab`).text(shortTabList.tabLink);
+        $(`#${tabListKey}`).empty();
+        switch(tabListKey) {
+            case "profile":
+                $(`#${tabListKey}`).html(shortTabList.contents);
+                break;
+            case "experience": {
+                for(let content of shortTabList.contents) {
+                    let experienceHTML = `
+                    <div class="media">
+                        <div class="media-body">
+                            <small class="text-muted mb-0">${content.started} - ${content.ended}</small>
+                            <h5 class="mt-0">${content.company}</h5>
+                            <p class="text-muted font-italic">${content.title}</p>
+                            <p>${content.shortDescription}</p>
+                        </div>
+                    </div>
+                    <hr/>
+                    `;
+
+                    $(`#${tabListKey}`).append(experienceHTML);
+                }
+                break;
+            }
+
+            case "skills": {
+                let skillsHTML = `
+                <ul>
+                `;
+
+                for(let content of shortTabList.contents) {
+                    skillsHTML += `<li>${content}</li>`;
+                }
+
+                skillsHTML += `</ul>`;
+
+                $(`#${tabListKey}`).append(skillsHTML);
+                break;
+            }
+
+        }
+    }
 
 
 }
@@ -86,6 +157,10 @@ function Initialize() {
     setLanguageIcon(settings.userLanguage);
 }
 
+/**
+ * Changes the toggle icon based of which language that's selected.
+ * @param {string} languageToBeSet 
+ */
 function setLanguageIcon(languageToBeSet) {
         $('#languageToggleIcon').attr('value', languageToBeSet);
         (languageToBeSet == 'sv-SE')? $('#languageToggleIcon').text("toggle_on") : $('#languageToggleIcon').text("toggle_off");

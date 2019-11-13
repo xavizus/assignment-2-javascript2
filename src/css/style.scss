@@ -1,8 +1,43 @@
-$theme-colors: ( //"primary": #FFF,
-"danger": #ff4136);
+$theme-colors: ( 
+    "primary": #000,
+    "danger": #ff4136
+    );
+
+
 #profilePicture {
     max-height: 200px;
     max-width: 200px;
+}
+
+#skills {
+
+    ul {
+        padding-left: 21px;
+        list-style: none;
+    }
+
+    li:before {
+        content: "\2714";
+        margin-left: -21px; 
+    }
+}
+
+.nav-item {
+
+    .nav-link {
+        margin-right: 5px;
+    }
+
+    &:last-child {
+        .nav-link {
+            margin-right: 0px;
+        }
+    }
+}
+
+.nav-link:hover {
+    color: #FFF;
+    background-color:  lighten(map_get($theme-colors, 'primary'), 15%);
 }
 
 .pointer {
