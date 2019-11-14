@@ -6,52 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Online Portfolio</title>
 </head>
 
 <body>
 
+    <!-- Start of Container-->
     <div class="row pt-2 w-sm w-md w-lg w-xl m-auto border border-top-0 border-primary rounded-bottom pb-2 mb-2">
+
+        <!-- Profile picture box-->
         <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4 order-1 mw-350px mx-auto">
-            <img id="profilePicture" src="./img/donkey.jpg" alt="Image of a donkey"
-                class="img-thumbnail border border-primary rounded-circle mx-auto mx-auto d-block mb-2">
+            <img id="profilePicture" src="./img/donkey.jpg" alt="Image of a donkey" class="img-thumbnail border border-primary rounded-circle mx-auto mx-auto d-block mb-2">
 
         </div>
+        <!--- End of profile box-->
+
+        <!-- Header box-->
         <div class="col-sm-12 col-md-6 col-lg-7 col-xl-8 order-3 order-md-3 mx-auto">
             <div class="page-header text-center text-md-left">
                 <h1 id="firstName"></h1>
                 <h1 id="lastName"></h1>
                 <p class="text-muted" id="currentTitle"></p>
-                <div id="chooseLanguage"
-                    class="d-flex justify-content-center justify-content-md-start justify-content-xl-end pointer">
-                    <div class="p-2" data-toggle="tooltip" data-placement="top" data-html="true" title="British"><img
-                            src="img/en-gb.png" class="icon-image align-middle" alt="British flag"></div>
-                    <div class="p-2" data-toggle="tooltip" data-placement="top" data-html="true" title="Change Language"><i id="languageToggleIcon" class="material-icons align-middle"
-                            value="en-GB">toggle_off</i></div>
-                    <div class="p-2" data-toggle="tooltip" data-placement="top" data-html="true" title="Swedish"><img
-                            src="./img/sv-se.png" class="icon-image align-middle" alt="Swedish flag"></div>
+                <!-- Language selector-->
+                <div id="chooseLanguage" class="d-flex justify-content-center justify-content-md-start justify-content-xl-end pointer">
+                    <div id="britishLanguage" class="p-2" data-toggle="tooltip" data-placement="top" data-html="true" title="British">
+                        <img src="img/en-gb.png" class="icon-image align-middle" alt="British flag"></div>
+                    <div id="changeLanguage" class="p-2" data-toggle="tooltip" data-placement="top" data-html="true" title="Change Language">
+                        <i id="languageToggleIcon" class="material-icons align-middle" value="en-GB">toggle_off</i>
+                    </div>
+                    <div id="swedishLanguage" class="p-2" data-toggle="tooltip" data-placement="top" data-html="true" title="Swedish">
+                        <img src="./img/sv-se.png" class="icon-image align-middle" alt="Swedish flag">
+                    </div>
                 </div>
+                <!-- End of Language selector-->
             </div>
             <hr />
         </div>
+        <!-- End of Header box-->
+
+        <!-- Start of left side panel-->
         <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4 order-4 order-md-4 mw-350px mx-auto">
             <hr />
+            <!-- Start of Contact box-->
             <div class="text-center">
                 <h5 id="contactHeading"></h5>
 
                 <div class="list-group list-group-flush">
-                    <a id="mail-link" href="#"
-                        class="list-group-item list-group-item-action flex-column align-items-start">
+                    <a id="mail-link" href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                         <h6><i class="material-icons align-middle">mail</i>&nbsp;<span id="mail"></span></h6>
                     </a>
-                    <a id="phone-link" href="tel:+46707545603"
-                        class="list-group-item list-group-item-action flex-column align-items-start">
+                    <a id="phone-link" href="tel:+46707545603" class="list-group-item list-group-item-action flex-column align-items-start">
                         <h6><i class="material-icons align-middle">phone</i>&nbsp;<span id="phone"></span></h6>
                     </a>
 
-                    <a id="findMe" href="#"
-                        class="list-group-item list-group-item-action flex-column align-items-start">
+                    <a id="findMe" href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                         <i class="material-icons">navigation</i>
                         <address class="d-inline-block"><span id="address"></span> <br> <span id="zipCode"></span>
                         </address>
@@ -59,67 +68,61 @@
                 </div>
             </div>
             <hr />
+            <!-- End of Contact box-->
+
+            <!-- Start of education box-->
             <div class="text-center mt-3">
                 <h5 id="educationHeading"></h5>
                 <div id="educationList" class="list-group list-group-flush">
-                    <li href="#" class="list-group-item flex-column align-items-start" data-toggle="tooltip"
-                        data-placement="right" data-html="true" title="Ongoing">
-                        <h6> <br>
-                            <p class="text-muted"></p>
-                        </h6>
-                    </li>
-                    <li href="#" class="list-group-item flex-column align-items-start" data-toggle="tooltip"
-                        data-placement="right" data-html="true" title="Examination year: 2011">
-                        <h6><br>
-                            <p class="text-muted"></p>
-                        </h6>
-                    </li>
                 </div>
             </div>
+            <!-- End of education box-->
         </div>
+
+        <!-- Start of Content box-->
         <div class="col-sm-12 col-md-6 col-lg-7 col-xl-8 order-3 order-md-5 text-sm-center text-md-left">
             <div class="row">
+                <!-- Start of Tab List-->
                 <div class="col-sm-12 text-center">
                     <ul class="nav flex-column nav-pills mb-4" id="pills-tab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="profile-tab" data-toggle="pill" href="#profile" role="tab"
-                                aria-controls="profile" aria-selected="true"></a>
+                            <a class="nav-link active" id="profile-tab" data-toggle="pill" href="#profile" role="tab" aria-controls="profile" aria-selected="true"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="experience-tab" data-toggle="pill" href="#experience" role="tab"
-                                aria-controls="experience" aria-selected="false"></a>
+                            <a class="nav-link" id="experience-tab" data-toggle="pill" href="#experience" role="tab" aria-controls="experience" aria-selected="false"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="skills-tab" data-toggle="pill" href="#skills" role="tab"
-                                aria-controls="skills" aria-selected="false"></a>
+                            <a class="nav-link" id="skills-tab" data-toggle="pill" href="#skills" role="tab" aria-controls="skills" aria-selected="false"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="certificates-tab" data-toggle="pill" href="#certificates" role="tab"
-                                aria-controls="certificates" aria-selected="false"></a>
+                            <a class="nav-link" id="certificates-tab" data-toggle="pill" href="#certificates" role="tab" aria-controls="certificates" aria-selected="false"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="projects-tab" data-toggle="pill" href="#projects" role="tab"
-                                aria-controls="projects" aria-selected="false"></a>
+                            <a class="nav-link" id="projects-tab" data-toggle="pill" href="#projects" role="tab" aria-controls="projects" aria-selected="false"></a>
                         </li>
                     </ul>
                 </div>
+                <!--End of Tab List-->
+
+                <!-- Start of Tab Content-->
                 <div class="col-sm-12">
                     <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="profile" role="tabpanel"
-                            aria-labelledby="profile-tab"></div>
+                        <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
                         <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
                         </div>
                         <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab"></div>
                         <div class="tab-pane fade" id="certificates" role="tabpanel" aria-labelledby="certificates-tab">
-                            </div>
+                        </div>
                         <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab"></div>
                     </div>
                 </div>
+                <!-- End of Tab Content-->
             </div>
         </div>
+        <!-- End of Content box-->
 
     </div>
-    </div>
+    <!-- End of Container-->
     <script src="main.js "></script>
 </body>
 

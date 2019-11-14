@@ -12,15 +12,16 @@
 
     "education": {
         "educationHeading": "Utbildning",
+        "examinationDateText": "Examendatum",
         "educations": [{
                 "schoolName": "Nackademin",
                 "Programme": "Webbutvecklare Fullstack Open-source",
-                "ExaminationDate": "2021-05-31"
+                "examinationDate": "2021-05-31"
             },
             {
                 "schoolName": "IT-gymnasiet Södertörn",
                 "Programme": "IT-specifiation nätverk and nätverkssäkerhet",
-                "ExaminationDate": "2011-06-05"
+                "examinationDate": "2011-06-05"
             }
         ]
 
@@ -57,25 +58,33 @@
                 "Effektiv problemlösare",
                 "Lagspelare",
                 "Pedagogisk",
-                "Dyslexi, Jag ser det mer som en färdighet än funktionshinder, då det har hjälpt mig att bli mer analytisk"
+                "Dyslexi, jag ser det mer som en färdighet än funktionshinder, då det har hjälpt mig att bli mer analytisk"
 
             ]
         },
         "certificates": {
             "tabLink": "Certifikat",
             "contents": [{
-                    "certificateName": "Microsoft Technology Associate: Networking Fundamentals",
-                    "Examinationer": "Certiport"
+                    "certificateName": "Microsoft Technology Associate: Networking Fundamentals, Exam 98-366",
+                    "Examinationer": "Certiport",
+                    "date": "2011-05-06"
                 },
                 {
                     "certificateName": "ITIL Foundation Examination",
-                    "Examinationer": "Olingo Consulting AB"
+                    "Examinationer": "Olingo Consulting AB",
+                    "date": "2013-10-30"
                 }
             ]
         },
         "projects": {
             "tabLink": "Projekt"
         }
+    },
+
+    "misc": {
+        "britishLanguage": "Brittiska",
+        "swedishLanguage": "Svenska",
+        "changeLanguage": "Byt Språk"
     }
 
 

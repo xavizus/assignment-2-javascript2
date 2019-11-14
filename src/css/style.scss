@@ -1,13 +1,16 @@
+// Overwrite theme colors
 $theme-colors: ( 
     "primary": #000,
     "danger": #ff4136
     );
 
+// set max-size for picture
 #profilePicture {
     max-height: 200px;
     max-width: 200px;
 }
 
+// Change list style to a green check instead of bullets
 #skills {
 
     ul {
@@ -21,6 +24,7 @@ $theme-colors: (
     }
 }
 
+// Set a margin between the nav-links (but not the last child).
 .nav-item {
 
     .nav-link {
@@ -34,20 +38,25 @@ $theme-colors: (
     }
 }
 
+// Make i obvious that you hover the tab-link item
 .nav-link:hover {
     color: #FFF;
     background-color:  lighten(map_get($theme-colors, 'primary'), 15%);
 }
 
+// Change cursor to a pointer
 .pointer {
     cursor: pointer;
 }
 
+// Set icon-image to a max size.
 .icon-image {
     max-width: 24px !important;
     max-height: 24px !important;
 }
 
+// Everything below are just for layout of the page, which Bootstrap didn't support out of the box.
+// All pixel sizes are from Bootstrap Grid options: https://getbootstrap.com/docs/4.3/layout/grid/#grid-options
 @media screen and (min-width: 576px) {
     .w-sm {
         width: 100% !important;

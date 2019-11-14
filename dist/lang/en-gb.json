@@ -1,5 +1,6 @@
 {
     "contact": {
+        "contactHeading": "Contact",
         "firstName": "Stephan",
         "lastName": "Ljungros",
         "currentTitle": "Web Developer Fullstack Open-source",
@@ -9,55 +10,83 @@
         "zipCode": "129 55 Hägersten"
     },
 
-    "education": [
-        {
-            "schoolName": "Nackademin",
-            "Programme":"Web Developer Fullstack Open-source",
-            "ExaminationDate": "2021-05-31"
-        },
-        {
-            "schoolName": "IT-gymnasiet Södertörn",
-            "Programme":"IT focus in network and networksecurity",
-            "ExaminationDate": "2011-06-05"
-        }
-    ],
+    "education": {
+        "educationHeading": "Education",
+        "examinationDateText": "Exam date",
+        "educations": [{
+                "schoolName": "Nackademin",
+                "Programme": "Web Developer Fullstack Open-source",
+                "examinationDate": "2021-05-31"
+            },
+            {
+                "schoolName": "IT-gymnasiet Södertörn",
+                "Programme": "IT, focus in network and networksecurity",
+                "examinationDate": "2011-06-05"
+            }
+        ]
 
-    "profile": "My goal has always been to develop and learn as much as possible to make it easier for both users and administrators of IT systems. I am interested in both hardware and software, in the form of personal computers, servers and various types of programming.\nMy ultimate dream would be to start own or join a company and where the vision is to develop systems from the user's needs, instead of which it is usually to develop systems what one thinks the user's needs are. Where the company has the customer's focus and has the customer as a guiding star.\nMy keen interest in software and programming means that I constantly spend my free time on self-study in different areas, mainly the security and optimization that I have vast interested in.\nBecause I have experience from helpdesk and have had close contact with users, I know what users need and how they perceive systems that exist today.",
-    "experience": [
-        {
-            "company": "Nacka kommun",
-            "started": "2012-01-01",
-            "ended": "ongoing",
-            "title": "Service technician",
-            "shortDescrition": ""
-        },
-        {
-            "company": "Lexicon IT-konsult",
-            "started": "2011-07-18",
-            "ended":"2011-12-31",
-            "title": "Consult",
-            "shortDescription": ""
-        }
-    ],
+    },
 
-    "skills": [
-        "Fastlearner",
+    "tabList": {
+        "profile": {
+            "tabLink": "Profile",
+            "contents": "<p>My goal has always been to develop and learn as much as possible to make it easier for both users and administrators of IT systems. I am interested in both hardware and software, in the form of personal computers, servers and various types of programming.</p><p>My ultimate dream would be to start own or join a company and where the vision is to develop systems from the user's needs, instead of which it is usually to develop systems what one thinks the user's needs are. Where the company has the customer's focus and has the customer as a guiding star.</p><p>My keen interest in software and programming means that I constantly spend my free time on self-study in different areas, mainly the security and optimization that I have vast interested in.</p><p>Because I have experience from helpdesk and have had close contact with users, I know what users need and how they perceive systems that exist today.</p>"
+        },
+        "experience": {
+            "tabLink": "Experience",
+            "contents": [{
+                    "company": "Nacka kommun",
+                    "started": "2012-01-01",
+                    "ended": "ongoing",
+                    "title": "Service technician",
+                    "shortDescription": "IT-Support in Windows environment as well as system manager and technical manager for systems"
+                },
+                {
+                    "company": "Lexicon IT-konsult",
+                    "started": "2011-07-18",
+                    "ended":"2011-12-31",
+                    "title": "Consult",
+                    "shortDescription": "IT-Support in Windows environment"
+                }
+            ]
+        },
+
+        "skills": {
+            "tabLink": "Skills",
+            "contents": [
+                "Fastlearner",
         "Fluent speech and writing in English and Swedish",
         "Excellent problem solving skills",
         "Teamplayer",
         "Educational",
         "Dyslexia, I view dyslexia as a skill more than a disability, because it have assisted me to become more analytic"
 
-    ],
-    "certificates": [
-        {
-            "certificateName": "Microsoft Technology Associate: Networking Fundamentals",
-            "Examinationer": "Certiport"
+            ]
         },
-        {
-            "certificateName": "ITIL Foundation Examination",
-            "Examinationer": "Olingo Consulting AB"
+        "certificates": {
+            "tabLink": "Certifikat",
+            "contents": [{
+                    "certificateName": "Microsoft Technology Associate: Networking Fundamentals, Exam 98-366",
+                    "Examinationer": "Certiport",
+                    "date": "2011-05-06"
+                },
+                {
+                    "certificateName": "ITIL Foundation Examination",
+                    "Examinationer": "Olingo Consulting AB",
+                    "date": "2013-10-30"
+                }
+            ]
+        },
+        "projects": {
+            "tabLink": "Project"
         }
-    ]
+    },
+
+    "misc": {
+        "britishLanguage": "British",
+        "swedishLanguage": "Swedish",
+        "changeLanguage": "Change Language"
+    }
+
 
 }
