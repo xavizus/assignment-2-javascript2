@@ -11,7 +11,7 @@ import * as Settings from './classes/settings.class.js';
 
 const largeScreenWidth = 1200; // Large screens (from Bootstrap https://getbootstrap.com/docs/4.0/layout/grid/#grid-options)
 let settings = "";
-//Git-hub api: https://api.github.com/users/xavizus/repos
+
 
 //When DOMContent is loaded, call main-function
 $().ready(main);
@@ -59,6 +59,9 @@ function Initialize() {
 
     // Changes the toggle icon based of which language that's selected.
     setLanguageIcon(settings.userLanguage);
+
+    //Add click event for projects tab
+    $('#projects-tab').click(loadProjects);
 }
 
 /**
@@ -152,6 +155,25 @@ function updateLanguageContent(settings) {
     // Change href-attribute with the address (Used to link to Google maps.)
     $("#findMe").attr("href", `https://www.google.com/maps/search/?api=1&query=${contactData.address} ${contactData.zipCode}`);
 
+    // Clear the ID of content
+    $("#followMeContent").empty();
+
+    //store followMe array in a variable
+    let followMeObject = settings.followMe;
+
+    $(`#followMeHeading`).text(followMeObject.followMeHeading);
+
+    // loop through array
+    for (let socialMediaObject of followMeObject.followMeContent) {
+        let followMeHTML = `
+        <div class="col-1">
+            <a href="${socialMediaObject.url}" target="_blank" class="link"><ion-icon name="logo-${socialMediaObject.brand}" size="large"></ion-icon></a>
+         </div>
+        `;
+        $('#followMeContent').append(followMeHTML);
+    }
+
+    //store educaitons object in a variable
     let educationData = settings.education;
 
     // Set education Heading
@@ -188,16 +210,9 @@ function updateLanguageContent(settings) {
         // Clear the content in the id.
         $(`#${tabListKey}`).empty();
 
-        // Warning, ugly solution ahead. Couldn't find any appropriate solution to make the code cleaner.
-
+        // Warning, ugly solution ahead. Couldn't find any appropriate solution to make this code cleaner.
+        // This whole switch statement are for populate tabs content 
         switch (tabListKey) {
-
-            case "profile":
-
-                // find id, set html string content.
-                $(`#${tabListKey}`).html(shortTabList.contents);
-
-                break;
 
             case "experience": {
                 // currentIndex used to keep track of <hr/>
@@ -285,7 +300,16 @@ function updateLanguageContent(settings) {
                     // Increase index
                     currentIndex++;
                 }
+                break;
 
+            }
+
+            default: {
+
+                // find id, set html string content.
+                $(`#${tabListKey}`).html(shortTabList.contents);
+
+                break;
             }
 
         }
@@ -300,6 +324,9 @@ function updateLanguageContent(settings) {
         $(`#${miscSetting}`).attr('title', miscSettings[miscSetting]);
     }
 
+    //Show the projects at the site.
+    showProjects();
+
 
     // Initialized tooltips
     $(function() {
@@ -307,4 +334,67 @@ function updateLanguageContent(settings) {
     });
 
 
+}
+
+// getting projects from github
+async function loadProjects() {
+
+    let projects = await fetch('https://api.github.com/users/xavizus/repos')
+        .then(response => response.json())
+        .then(results => {
+            return results;
+        });
+
+    // Store the project data in localStorage
+    localStorage.setItem("projects", JSON.stringify(projects));
+
+    //Show the project in the project Tab
+    showProjects();
+}
+
+// Shows projects in the project Tab
+function showProjects() {
+
+    // Get project data from localStorage.
+    let projects = localStorage.getItem('projects');
+
+    // Prase that data to json.
+    projects = JSON.parse(projects);
+
+    // Sort the data based of date last updated. (decreasing order)
+    projects.sort((larger, lesser) => {
+        return Date.parse(lesser.updated_at) - Date.parse(larger.updated_at);
+    });
+
+    // Clear the current content
+    $('#projects').empty();
+
+    // Create a flexbox (with bootstrap)
+    let projectsHTML = `<div class="row">`;
+
+    // For each project of projects
+    for (let project of projects) {
+
+        // append projectsHTML with following data
+        // Notice: project.updated_at.substring(0,10) - takes the YYYY-MM-DD date from the string.
+        projectsHTML += `
+        <div class="col-12 col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">${project.name}</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">${settings.languageContent.misc.lastUpdated}: ${project.updated_at.substring(0,10)}</h6>
+                    <p class="card-text">${project.description}</p>
+                    <a href="${project.html_url}" target="_blank" class="card-link">${project.full_name}</a>
+                </div>
+            </div>
+        </div>
+        `;
+
+    }
+
+    // append with end div for the flexbox.
+    projectsHTML += `</div>`;
+
+    // Append id with projectsHTML
+    $('#projects').append(projectsHTML);
 }

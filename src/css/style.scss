@@ -1,13 +1,28 @@
-// Overwrite theme colors
-$theme-colors: ( 
-    "primary": #000,
-    "danger": #ff4136
-    );
+// Overwrite bootstrap theme colors
+$theme-colors: ("primary":#000,
+    "danger": #ff4136,
+    "link": #007bff);
 
-// set max-size for picture
+// Set max-size for picture
 #profilePicture {
     max-height: 200px;
     max-width: 200px;
+}
+
+// Fixes link colors, becuse primary color overwrite the blue color.
+a.list-group-item-action,
+a.card-link,
+a.link {
+    color: map_get($theme-colors, 'link');
+
+    &:hover {
+        color: darken(map_get($theme-colors, 'link'), 20%);
+    }
+}
+
+.card {
+    max-width: 400px;
+    margin-bottom: 5px;
 }
 
 // Change list style to a green check instead of bullets
@@ -20,12 +35,12 @@ $theme-colors: (
 
     li:before {
         content: "\2714";
-        margin-left: -21px; 
+        margin-left: -21px;
     }
 }
 
 // Set a margin between the nav-links (but not the last child).
-.nav-item {
+:not(.flex-column) .nav-item {
 
     .nav-link {
         margin-right: 5px;
@@ -38,10 +53,24 @@ $theme-colors: (
     }
 }
 
-// Make i obvious that you hover the tab-link item
+// Set margin between the nav-links (but not the first child)
+.flex-column .nav-item {
+
+    .nav-link {
+        margin-top: 5px;
+    }
+
+    &:first-child {
+        .nav-link {
+            margin-top: 0px;
+        }
+    }
+}
+
+// Make it obvious that you hover the tab-link item
 .nav-link:hover {
     color: #FFF;
-    background-color:  lighten(map_get($theme-colors, 'primary'), 15%);
+    background-color: lighten(map_get($theme-colors, 'primary'), 20%);
 }
 
 // Change cursor to a pointer
@@ -61,6 +90,7 @@ $theme-colors: (
     .w-sm {
         width: 100% !important;
     }
+
     .mw-sm {
         max-width: 100% !important;
     }
@@ -70,6 +100,7 @@ $theme-colors: (
     .w-md {
         width: 100% !important;
     }
+
     .mw-md {
         max-width: 100% !important;
     }
@@ -79,6 +110,7 @@ $theme-colors: (
     .w-lg {
         width: 80% !important;
     }
+
     .mw-lg {
         max-width: 350px !important;
     }
@@ -88,6 +120,7 @@ $theme-colors: (
     .w-xl {
         width: 80% !important;
     }
+
     .mw-xl {
         max-width: 350px !important;
     }

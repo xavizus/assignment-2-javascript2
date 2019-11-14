@@ -1,7 +1,7 @@
 export class Settings {
 
     //Languagecode is a combination of ISO 639 (two lowercase letter culture language code) and ISO 3166 (two uppercase letter country code)
-    constructor(defaultLanguage = "en-GB"){
+    constructor(defaultLanguage = "en-GB") {
         this.userLanguage = defaultLanguage;
         this.languageContent = null;
 
@@ -18,10 +18,10 @@ export class Settings {
         let selectedLanguage = localStorage.getItem("language");
 
         // if no localstorage 'language' found
-        if(selectedLanguage === null || selectedLanguage === '') {
+        if (selectedLanguage === null || selectedLanguage === '') {
             //assign the default value
             localStorage.setItem('language', this.userLanguage);
-        } 
+        }
         // if localstorage 'language' found
         else {
             // set the found language
@@ -37,7 +37,7 @@ export class Settings {
     /**
      * loads language file
      */
-    async loadLanguageContent(){
+    async loadLanguageContent() {
 
         // Set path to language file.
         let fileToGet = `./lang/${this.userLanguage}.json`;
@@ -45,9 +45,9 @@ export class Settings {
         // fetch the file
         await fetch(fileToGet)
             // When response is recived
-            .then((response)=>{
+            .then((response) => {
                 // If the response is not ok.
-                if(!response.ok) {
+                if (!response.ok) {
                     // throw an error.
                     throw Error(response.statusText);
                 }
@@ -60,9 +60,9 @@ export class Settings {
                 this.languageContent = results;
             })
             // if any error encounter 
-            .catch((error)=> {
+            .catch((error) => {
                 // Error promt in console.
-                console.error("Could not load the language file %s . %s",fileToGet, error);
+                console.error("Could not load the language file %s . %s", fileToGet, error);
             });
 
     }

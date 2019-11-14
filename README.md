@@ -5,7 +5,7 @@ Sidan ska innehålla följande delar
 - [ ] Landing page - kortfattad beskrivning.
 - [x] Kontaktuppgifter.
 - [x] Portfolio.
-- [ ] Länkar till GitHub, LinkedIn och liknande.
+- [x] Länkar till GitHub, LinkedIn och liknande.
 
 Ni ska implementera ett visst antal tillgänglighetskrav. (https://www.w3.org/WAI/WCAG21/quickref/) Välj bland följande:
 
@@ -28,7 +28,7 @@ G-krav:
 VG-krav:
 - [x] Ni ska göra en SPA (Single Page Application) (https://en.wikipedia.org/wiki/Single-page_application) med hjälp av jQuery.
 - [x] Användaren ska kunna välja språk.
-- [ ] All kod (html, css, js) ska vara välskriven, korrekt indenterad och kommenterad.
+- [x] All kod (html, css, js) ska vara välskriven, korrekt indenterad och kommenterad.
 - [x] Implementera minst 5 tillgänglighetskrav.
 
 Inlämning sker genom ihopzippad fil med allt som krävs för att projektet ska vara direkt körbart.

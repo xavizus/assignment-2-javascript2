@@ -10,6 +10,25 @@
         "zipCode": "129 55 Hägersten"
     },
 
+    "followMe": {
+        "followMeHeading": "Follow me",
+        "followMeContent": [
+            {
+                "brand": "github",
+                "url": "https://github.com/xavizus"
+            },
+            {
+                "brand": "linkedin",
+                "url": "https://www.linkedin.com/in/stephan-ljungros-92250b84/"
+            },
+            {
+            "brand": "twitter",
+            "url": "https://twitter.com/xavizus"
+            }
+        ]
+
+    },
+
     "education": {
         "educationHeading": "Education",
         "examinationDateText": "Exam date",
@@ -55,16 +74,15 @@
             "tabLink": "Skills",
             "contents": [
                 "Fastlearner",
-        "Fluent speech and writing in English and Swedish",
-        "Excellent problem solving skills",
-        "Teamplayer",
-        "Educational",
-        "Dyslexia, I view dyslexia as a skill more than a disability, because it have assisted me to become more analytic"
-
+                "Fluent speech and writing in English and Swedish",
+                "Excellent problem solving skills",
+                "Teamplayer",
+                "Educational",
+                "Dyslexia, I view dyslexia as a skill more than a disability, because it have assisted me to become more analytic"
             ]
         },
         "certificates": {
-            "tabLink": "Certifikat",
+            "tabLink": "Certificate",
             "contents": [{
                     "certificateName": "Microsoft Technology Associate: Networking Fundamentals, Exam 98-366",
                     "Examinationer": "Certiport",
@@ -85,7 +103,8 @@
     "misc": {
         "britishLanguage": "British",
         "swedishLanguage": "Swedish",
-        "changeLanguage": "Change Language"
+        "changeLanguage": "Change Language",
+        "lastUpdated": "Last updated"
     }
 
 
