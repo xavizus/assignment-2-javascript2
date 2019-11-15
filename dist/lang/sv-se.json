@@ -11,8 +11,7 @@
     },
     "followMe": {
         "followMeHeading": "Följ mig",
-        "followMeContent": [
-            {
+        "followMeContent": [{
                 "brand": "github",
                 "url": "https://github.com/xavizus"
             },
@@ -21,8 +20,8 @@
                 "url": "https://www.linkedin.com/in/stephan-ljungros-92250b84/"
             },
             {
-            "brand": "twitter",
-            "url": "https://twitter.com/xavizus"
+                "brand": "twitter",
+                "url": "https://twitter.com/xavizus"
             }
         ]
 
@@ -47,8 +46,8 @@
 
     "tabList": {
         "profile": {
-            "tabLink": "Profil",
-            "contents": "<p>Mitt mål har alltid varit att utvecklas och lära mig så mycket som möjligt för att kunna underlätta för både användare och administratörer av IT-system. Jag är intresserad av både hårdvara och mjukvara, detta i form av persondatorer, servrar och olika typer av programmering. </p><p>Min yttersta dröm vore att starta eget- eller gå med i ett företag och där visionen är att utveckla system från användarens behov, istället för som det oftast är att utveckla system vad man tror användarens behov är. Där företaget har kundens fokus och har kunden som ledstjärna.</p><p>Mitt brinnande intresse för mjukvara och programmering gör att jag ständigt spenderar min fria tid på självstudier i olika områden, främst är det säkerhet och optimering som jag har intresserats för.</p><p>Eftersom att jag har erfarenhet från helpdesk och haft nära kontakt med användare så vet jag vad användarna har för behov och hur de uppfattar system som existerar idag.</p>"
+            "tabLink": "Om mig",
+            "contents": "<h2>Hej och välkommen!</h2><p>Jag är en blivade Webbutvecklare Fullstack Open-source. Jag har en stor förstålse över hur IT i sin helhet fungerar, där jag just nu har spetskompetens i nätverk och säkerhet, vilket jag vill utöka till att ha spetskompetens i webbutveckling.</p><p>Jag älskar att optimera saker till maximalt möjliga och jag älskar att lära mig nya saker varje dag. Jag gillar även att arbeta i lag, då du lär dig så mycket snabbare och så mycket mer än att arbeta ensam. Jag gillar att dela med mig min kunskap till andra, då jag gillar att ta del av andras kunskaper.</p><p>På fritiden spenderar jag en hel del vid datorn, där jag oftast söker efter nya saker att lära mig inom IT. Jag älskar också att laga mat, och skulle vilja kalla mig en gourmé. Jag ska inte dölja att jag även är en gamer och gillar att spela en del spel.</p><p>Mitt mål i arbetslivet är att hitta ett företag, eller starta eget, där det är en skön stämning i arbetslaget och att visionen är att utveckla kvalité system och samtidigt vara flexibla för kunder. Där företaget har kundens fokus och har kunden som ledstjärna. Eftersom att jag har erfarenhet från helpdesk och haft nära kontakt med användare så vet jag vad användarna har för behov och hur de uppfattar system som existerar idag.</p>"
         },
         "experience": {
             "tabLink": "Erfarenheter",
@@ -71,14 +70,41 @@
 
         "skills": {
             "tabLink": "Skickligheter",
-            "contents": [
-                "Flytande Svenska och Engelska i tal och skrift",
-                "Effektiv problemlösare",
-                "Lagspelare",
-                "Pedagogisk",
-                "Dyslexi, jag ser det mer som en färdighet än funktionshinder, då det har hjälpt mig att bli mer analytisk"
+            "contents": {
+                "Personal skills": [
+                    "Snabblärd",
+                    "Flytande Svenska och Engelska i tal och skrift",
+                    "Effektiv problemlösare",
+                    "Lagspelare",
+                    "Pedagogisk",
+                    "Dyslexi, jag ser det mer som en färdighet än funktionshinder, då det har hjälpt mig att bli mer analytisk"
+                ],
+                "Programming skills": {
+                    "JavaScript": "Utmärkt",
+                    "HTML": "Utmärkt",
+                    "CSS": "Hög",
+                    "PHP": "Bra",
+                    "NodeJS": "Bra",
+                    "Python": "Bra",
+                    "MySQL": "Bra",
+                    "C++": "Nybörjare",
+                    "LUA": "Nybörjare",
+                    "C#": "Nybörjare"
+                },
+                "Other technical skills": {
+                    "Windows-baserat OS": "Utmärkt",
+                    "Active Directory": "Hög",
+                    "Domain Name System": "Hög",
+                    "DHCP": "Hög",
+                    "Linux-baserat OS": "Hög",
+                    "Apple-baserat OS": "Bra",
+                    "Networks": "Bra",
+                    "Office365 Administration": "Bra",
+                    "IIS": "Bra",
+                    "NGINX": "Bra"
+                }
 
-            ]
+            }
         },
         "certificates": {
             "tabLink": "Certifikat",

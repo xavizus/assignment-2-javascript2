@@ -3,6 +3,9 @@ $theme-colors: ("primary":#000,
     "danger": #ff4136,
     "link": #007bff);
 
+.hide-overflow {
+    overflow: hidden;
+}
 // Set max-size for picture
 #profilePicture {
     max-height: 200px;
@@ -20,6 +23,7 @@ a.link {
     }
 }
 
+// Make sure that the cards doesn't take too much space. 400px are just a magic number
 .card {
     max-width: 400px;
     margin-bottom: 5px;

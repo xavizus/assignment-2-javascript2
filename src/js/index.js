@@ -251,22 +251,76 @@ function updateLanguageContent(settings) {
 
             case "skills": {
 
-                // Start of un-order list
-                let skillsHTML = `
-                <ul>
-                `;
+                // Shorten the object path
+                let skills = shortTabList.contents;
 
-                // for each skill in contents
-                for (let skill of shortTabList.contents) {
+                // Start flex box
+                let skillsHTML = `<div class="row text-left">`;
 
-                    // append skillsHTML with list-item
-                    skillsHTML += `<li>${skill}</li>`;
+                // for each skilltype in skills
+                for (let skillType in skills) {
+
+                    // Self explationary
+                    if (skillType == "Personal skills") {
+                        
+                        // Create flex-item with header with skilltype name
+                        skillsHTML += `
+                        <div class="col-12">
+                        <h2>${skillType}</h2>
+                        `;
+
+                        // Start of un-order list for personal skills
+                        skillsHTML += `
+                        <ul>
+                        `;
+                        // for each skill in contents
+                        for (let skill of skills[skillType]) {
+
+                            // append skillsHTML with list-item
+                            skillsHTML += `<li>${skill}</li>`;
+                        }
+
+                        // End of un-order list for personal skills
+                        skillsHTML += `</ul></div>`;
+
+                        // append id with skillsHTML (Could use html instead of append)
+
+                    }
+
+                    else {
+
+                        // Make the variable shorter.
+                        let skillTypeContent = skills[skillType];
+
+                        // Create a flex-item with header with skilltype name and a table
+                        skillsHTML += `
+                        <div class="col-12 col-sm-12 col-lg-12 col-xl-6">
+                        <h2>${skillType}</h2>
+                        <table class="table table-borderless table-sm">
+                        `;
+
+
+                        // For each skill in skillTypeContent
+                        for(let skillName in skillTypeContent) {
+
+                            // Create a table row with one column with skillName, and one column with content of the skillName
+                            skillsHTML += `
+                            <tr>
+                                <td>${skillName}</td> 
+                                <td class="font-weight-bold">${skillTypeContent[skillName]}</td>
+                            </tr>`;
+                        }
+                        
+                        // End of table and flex-item
+                        skillsHTML += `</table></div>`;
+
+                    }
+
                 }
+                // End of flex-box
+                skillsHTML += `</div>`;
 
-                // End of un-order list
-                skillsHTML += `</ul>`;
-
-                // append id with skillsHTML (Could use html instead of append)
+                // Append tabListKey with skillsHTML
                 $(`#${tabListKey}`).append(skillsHTML);
 
                 break;
@@ -379,7 +433,7 @@ function showProjects() {
         // Notice: project.updated_at.substring(0,10) - takes the YYYY-MM-DD date from the string.
         projectsHTML += `
         <div class="col-12 col-lg-4">
-            <div class="card">
+            <div class="card mx-auto">
                 <div class="card-body">
                     <h4 class="card-title">${project.name}</h4>
                     <h6 class="card-subtitle mb-2 text-muted">${settings.languageContent.misc.lastUpdated}: ${project.updated_at.substring(0,10)}</h6>

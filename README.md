@@ -2,7 +2,7 @@
 
 Sidan ska innehålla följande delar
 
-- [ ] Landing page - kortfattad beskrivning.
+- [x] Landing page - kortfattad beskrivning.
 - [x] Kontaktuppgifter.
 - [x] Portfolio.
 - [x] Länkar till GitHub, LinkedIn och liknande.
@@ -18,7 +18,7 @@ Ni ska implementera ett visst antal tillgänglighetskrav. (https://www.w3.org/WA
 - [x] 3.2.1 On Focus (Inget oväntat sker när ett objekt får fokus. Ex. om du klickar på mail-adressen så öppnas mail klienten)
 
 G-krav:
-- [x] All CSS ska göras i SASS/LESS.
+- [x] All CSS ska göras i SASS/LESS/SCSS.
 - [x] Göra någon DOM-manipulering i jQuery.
 - [x] Sidan ska använda Bootstrap.
 - [x] Ni ska tematisera Bootstrap mha Scss.

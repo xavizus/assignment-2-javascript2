@@ -12,8 +12,7 @@
 
     "followMe": {
         "followMeHeading": "Follow me",
-        "followMeContent": [
-            {
+        "followMeContent": [{
                 "brand": "github",
                 "url": "https://github.com/xavizus"
             },
@@ -22,8 +21,8 @@
                 "url": "https://www.linkedin.com/in/stephan-ljungros-92250b84/"
             },
             {
-            "brand": "twitter",
-            "url": "https://twitter.com/xavizus"
+                "brand": "twitter",
+                "url": "https://twitter.com/xavizus"
             }
         ]
 
@@ -48,8 +47,8 @@
 
     "tabList": {
         "profile": {
-            "tabLink": "Profile",
-            "contents": "<p>My goal has always been to develop and learn as much as possible to make it easier for both users and administrators of IT systems. I am interested in both hardware and software, in the form of personal computers, servers and various types of programming.</p><p>My ultimate dream would be to start own or join a company and where the vision is to develop systems from the user's needs, instead of which it is usually to develop systems what one thinks the user's needs are. Where the company has the customer's focus and has the customer as a guiding star.</p><p>My keen interest in software and programming means that I constantly spend my free time on self-study in different areas, mainly the security and optimization that I have vast interested in.</p><p>Because I have experience from helpdesk and have had close contact with users, I know what users need and how they perceive systems that exist today.</p>"
+            "tabLink": "About me",
+            "contents": "<h2>Hello and welcome!</h2><p>I'm a full-stack open-soruce web developer. I have a great sense of how IT works in its entirety, where I currently have cutting-edge expertise in networking and security, which I want to extend to having cutting-edge expertise in web development.</p><p>I love optimizing things to the maximum and I love learning new things every day. I also like to work in teams, as you learn so much faster and so much more than working alone. I like to share my knowledge with others, as I like to share the knowledge of others. </p><p>In my spare time I spend a lot at the computer, where I usually look for new things to learn in IT. I also love to cook, and would like to call myself a gourmet. I'm not going to hide that I'm a gamer too and like to play some games. </p><p> My goal in my career is to find a company, or start my own, where there is a nice atmosphere in the work team and that the vision is to develop quality systems and at the same time be flexible for customers. Where the company has the customer's focus and has the customer as a guiding star. Since I have experience from helpdesk and have had close contact with users, I know what users need and how they perceive systems that exist today. </p>"
         },
         "experience": {
             "tabLink": "Experience",
@@ -63,7 +62,7 @@
                 {
                     "company": "Lexicon IT-konsult",
                     "started": "2011-07-18",
-                    "ended":"2011-12-31",
+                    "ended": "2011-12-31",
                     "title": "Consult",
                     "shortDescription": "IT-Support in Windows environment"
                 }
@@ -72,14 +71,40 @@
 
         "skills": {
             "tabLink": "Skills",
-            "contents": [
-                "Fastlearner",
-                "Fluent speech and writing in English and Swedish",
-                "Excellent problem solving skills",
-                "Teamplayer",
-                "Educational",
-                "Dyslexia, I view dyslexia as a skill more than a disability, because it have assisted me to become more analytic"
-            ]
+            "contents": {
+                "Personal skills": [
+                    "Fastlearner",
+                    "Fluent speech and writing in English and Swedish",
+                    "Excellent problem solving skills",
+                    "Teamplayer",
+                    "Educational",
+                    "Dyslexia, I view dyslexia as a skill more than a disability, because it have assisted me to become more analytic"
+                ],
+                "Programming skills": {
+                    "JavaScript": "Excellent",
+                    "HTML": "Excelent",
+                    "CSS": "Great",
+                    "PHP": "Good",
+                    "NodeJS": "Good",
+                    "Python": "Good",
+                    "MySQL": "Good",
+                    "C++": "Novice",
+                    "LUA": "Novice",
+                    "C#": "Novice"
+                },
+                "Other technical skills": {
+                    "Windows-based OS": "Excellent",
+                    "Active Directory": "Great",
+                    "Domain Name System": "Great",
+                    "DHCP": "Great",
+                    "Linux-based OS": "Great",
+                    "Apple-based OS": "Good",
+                    "Networks": "Good",
+                    "Office365 Administration": "Good",
+                    "IIS": "Good",
+                    "NGINX": "Good"
+                }
+            }
         },
         "certificates": {
             "tabLink": "Certificate",
