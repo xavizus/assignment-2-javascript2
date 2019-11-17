@@ -67,6 +67,9 @@ function Initialize() {
     $('#seeMoreBtn').click(hideLandingPage);
 }
 
+/**
+ * Set animation and hides the landingpage
+ */
 function hideLandingPage() {
 
     $("#landingPage").addClass("hide-landing-page");
