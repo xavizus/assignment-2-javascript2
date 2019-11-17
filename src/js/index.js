@@ -78,11 +78,11 @@ function hideLandingPage() {
 
     setTimeout(() => {
         $("#landingPage").empty();
-    },1500);
+    }, 1500);
 
     setTimeout(() => {
         $("body").removeClass("hide-overflow");
-    },3000)
+    }, 3000)
 
 }
 
@@ -156,7 +156,7 @@ function updateLanguageContent(settings) {
     });
 
     let landingPageData = settings.landingPage;
-    for(let landingPageItem in landingPageData) {
+    for (let landingPageItem in landingPageData) {
         $(`#${landingPageItem}`).text(landingPageData[landingPageItem]);
     }
 
@@ -289,7 +289,7 @@ function updateLanguageContent(settings) {
 
                     // Self explationary
                     if (skillType == "Personal skills") {
-                        
+
                         // Create flex-item with header with skilltype name
                         skillsHTML += `
                         <div class="col-12">
@@ -312,9 +312,7 @@ function updateLanguageContent(settings) {
 
                         // append id with skillsHTML (Could use html instead of append)
 
-                    }
-
-                    else {
+                    } else {
 
                         // Make the variable shorter.
                         let skillTypeContent = skills[skillType];
@@ -328,7 +326,7 @@ function updateLanguageContent(settings) {
 
 
                         // For each skill in skillTypeContent
-                        for(let skillName in skillTypeContent) {
+                        for (let skillName in skillTypeContent) {
 
                             // Create a table row with one column with skillName, and one column with content of the skillName
                             skillsHTML += `
@@ -337,7 +335,7 @@ function updateLanguageContent(settings) {
                                 <td class="font-weight-bold">${skillTypeContent[skillName]}</td>
                             </tr>`;
                         }
-                        
+
                         // End of table and flex-item
                         skillsHTML += `</table></div>`;
 
@@ -406,7 +404,7 @@ function updateLanguageContent(settings) {
     }
 
     // Check if content of localStorage is not empty.
-    if(!(localStorage.getItem('projects') == null)) {
+    if (!(localStorage.getItem('projects') == null)) {
         //Show the projects at the site.
         showProjects();
     }
