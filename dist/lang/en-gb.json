@@ -1,4 +1,9 @@
 {
+    "landingPage": {
+        "landingPageHeading": "#FullStack-developer",
+        "landingPageText": "Are you looking for a lazy developer?",
+        "seeMoreBtn":"See more here"
+    },
     "contact": {
         "contactHeading": "Contact",
         "firstName": "Stephan",

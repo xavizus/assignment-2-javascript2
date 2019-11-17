@@ -1,4 +1,9 @@
 {
+    "landingPage": {
+        "landingPageHeading": "#FullStack-Utvecklare",
+        "landingPageText": "Söker du efter en lat utvecklare?",
+        "seeMoreBtn":"Se mer här"
+    },
     "contact": {
         "contactHeading": "Kontakt",
         "firstName": "Stephan",

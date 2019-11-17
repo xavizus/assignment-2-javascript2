@@ -62,6 +62,25 @@ function Initialize() {
 
     //Add click event for projects tab
     $('#projects-tab').click(loadProjects);
+
+    //Add click event for seeMore button
+    $('#seeMoreBtn').click(hideLandingPage);
+}
+
+function hideLandingPage() {
+
+    $("#landingPage").addClass("hide-landing-page");
+
+    $("#seeMoreBtn").remove();
+
+    setTimeout(() => {
+        $("#landingPage").empty();
+    },1500);
+
+    setTimeout(() => {
+        $("body").removeClass("hide-overflow");
+    },3000)
+
 }
 
 /**
@@ -132,6 +151,11 @@ function updateLanguageContent(settings) {
     $(function() {
         $('[data-toggle="tooltip"]').tooltip('dispose');
     });
+
+    let landingPageData = settings.landingPage;
+    for(let landingPageItem in landingPageData) {
+        $(`#${landingPageItem}`).text(landingPageData[landingPageItem]);
+    }
 
     let contactData = settings.contact;
 
@@ -378,8 +402,11 @@ function updateLanguageContent(settings) {
         $(`#${miscSetting}`).attr('title', miscSettings[miscSetting]);
     }
 
-    //Show the projects at the site.
-    showProjects();
+    // Check if content of localStorage is not empty.
+    if(!(localStorage.getItem('projects') == null)) {
+        //Show the projects at the site.
+        showProjects();
+    }
 
 
     // Initialized tooltips
