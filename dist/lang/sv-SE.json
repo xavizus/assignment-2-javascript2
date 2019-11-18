@@ -1,0 +1,141 @@
+{
+    "landingPage": {
+        "landingPageHeading": "#FullStack-Utvecklare",
+        "landingPageText": "Söker du efter en lat utvecklare?",
+        "seeMoreBtn":"Se mer här"
+    },
+    "contact": {
+        "contactHeading": "Kontakt",
+        "firstName": "Stephan",
+        "lastName": "Ljungros",
+        "currentTitle": "Webbutvecklare Fullstack Open-source",
+        "mail": "stephan.ljungros@gmail.com",
+        "phone": "+46 707- 545 603",
+        "address": "Elsa Beskows G 23",
+        "zipCode": "129 55 Hägersten"
+    },
+    "followMe": {
+        "followMeHeading": "Följ mig",
+        "followMeContent": [{
+                "brand": "github",
+                "url": "https://github.com/xavizus"
+            },
+            {
+                "brand": "linkedin",
+                "url": "https://www.linkedin.com/in/stephan-ljungros-92250b84/"
+            },
+            {
+                "brand": "twitter",
+                "url": "https://twitter.com/xavizus"
+            }
+        ]
+
+    },
+
+    "education": {
+        "educationHeading": "Utbildning",
+        "examinationDateText": "Examendatum",
+        "educations": [{
+                "schoolName": "Nackademin",
+                "Programme": "Webbutvecklare Fullstack Open-source",
+                "examinationDate": "2021-05-31"
+            },
+            {
+                "schoolName": "IT-gymnasiet Södertörn",
+                "Programme": "IT-specifiation nätverk and nätverkssäkerhet",
+                "examinationDate": "2011-06-05"
+            }
+        ]
+
+    },
+
+    "tabList": {
+        "profile": {
+            "tabLink": "Om mig",
+            "contents": "<h2>Hej och välkommen!</h2><p>Jag är en blivade Webbutvecklare Fullstack Open-source. Jag har en stor förstålse över hur IT i sin helhet fungerar, där jag just nu har spetskompetens i nätverk och säkerhet, vilket jag vill utöka till att ha spetskompetens i webbutveckling.</p><p>Jag älskar att optimera saker till maximalt möjliga och jag älskar att lära mig nya saker varje dag. Jag gillar även att arbeta i lag, då du lär dig så mycket snabbare och så mycket mer än att arbeta ensam. Jag gillar att dela med mig min kunskap till andra, då jag gillar att ta del av andras kunskaper.</p><p>På fritiden spenderar jag en hel del vid datorn, där jag oftast söker efter nya saker att lära mig inom IT. Jag älskar också att laga mat, och skulle vilja kalla mig en gourmé. Jag ska inte dölja att jag även är en gamer och gillar att spela en del spel.</p><p>Mitt mål i arbetslivet är att hitta ett företag, eller starta eget, där det är en skön stämning i arbetslaget och att visionen är att utveckla kvalité system och samtidigt vara flexibla för kunder. Där företaget har kundens fokus och har kunden som ledstjärna. Eftersom att jag har erfarenhet från helpdesk och haft nära kontakt med användare så vet jag vad användarna har för behov och hur de uppfattar system som existerar idag.</p>"
+        },
+        "experience": {
+            "tabLink": "Erfarenheter",
+            "contents": [{
+                    "company": "Nacka kommun",
+                    "started": "2012-01-01",
+                    "ended": "pågående",
+                    "title": "Servicetekniker",
+                    "shortDescription": "IT-Support i Windows miljö samt systemförvaltare och tekniskt förvaltare för system"
+                },
+                {
+                    "company": "Lexicon IT-konsult",
+                    "started": "2011-07-18",
+                    "ended": "2011-12-31",
+                    "title": "Konsult",
+                    "shortDescription": "IT-Support i Windows miljö"
+                }
+            ]
+        },
+
+        "skills": {
+            "tabLink": "Skickligheter",
+            "contents": {
+                "Personal skills": [
+                    "Snabblärd",
+                    "Flytande Svenska och Engelska i tal och skrift",
+                    "Effektiv problemlösare",
+                    "Lagspelare",
+                    "Pedagogisk",
+                    "Dyslexi, jag ser det mer som en färdighet än funktionshinder, då det har hjälpt mig att bli mer analytisk"
+                ],
+                "Programming skills": {
+                    "JavaScript": "Utmärkt",
+                    "HTML": "Utmärkt",
+                    "CSS": "Hög",
+                    "PHP": "Bra",
+                    "NodeJS": "Bra",
+                    "Python": "Bra",
+                    "MySQL": "Bra",
+                    "C++": "Nybörjare",
+                    "LUA": "Nybörjare",
+                    "C#": "Nybörjare"
+                },
+                "Other technical skills": {
+                    "Windows-baserat OS": "Utmärkt",
+                    "Active Directory": "Hög",
+                    "Domain Name System": "Hög",
+                    "DHCP": "Hög",
+                    "Linux-baserat OS": "Hög",
+                    "Apple-baserat OS": "Bra",
+                    "Networks": "Bra",
+                    "Office365 Administration": "Bra",
+                    "IIS": "Bra",
+                    "NGINX": "Bra"
+                }
+
+            }
+        },
+        "certificates": {
+            "tabLink": "Certifikat",
+            "contents": [{
+                    "certificateName": "Microsoft Technology Associate: Networking Fundamentals, Exam 98-366",
+                    "Examinationer": "Certiport",
+                    "date": "2011-05-06"
+                },
+                {
+                    "certificateName": "ITIL Foundation Examination",
+                    "Examinationer": "Olingo Consulting AB",
+                    "date": "2013-10-30"
+                }
+            ]
+        },
+        "projects": {
+            "tabLink": "Projekt"
+        }
+    },
+
+    "misc": {
+        "britishLanguage": "Brittiska",
+        "swedishLanguage": "Svenska",
+        "changeLanguage": "Byt språk",
+        "lastUpdated": "Senast updaterad"
+    }
+
+
+}

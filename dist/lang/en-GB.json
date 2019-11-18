@@ -1,0 +1,141 @@
+{
+    "landingPage": {
+        "landingPageHeading": "#FullStack-developer",
+        "landingPageText": "Are you looking for a lazy developer?",
+        "seeMoreBtn":"See more here"
+    },
+    "contact": {
+        "contactHeading": "Contact",
+        "firstName": "Stephan",
+        "lastName": "Ljungros",
+        "currentTitle": "Web Developer Fullstack Open-source",
+        "mail": "stephan.ljungros@gmail.com",
+        "phone": "+46 707- 545 603",
+        "address": "Elsa Beskows G 23",
+        "zipCode": "129 55 Hägersten"
+    },
+
+    "followMe": {
+        "followMeHeading": "Follow me",
+        "followMeContent": [{
+                "brand": "github",
+                "url": "https://github.com/xavizus"
+            },
+            {
+                "brand": "linkedin",
+                "url": "https://www.linkedin.com/in/stephan-ljungros-92250b84/"
+            },
+            {
+                "brand": "twitter",
+                "url": "https://twitter.com/xavizus"
+            }
+        ]
+
+    },
+
+    "education": {
+        "educationHeading": "Education",
+        "examinationDateText": "Exam date",
+        "educations": [{
+                "schoolName": "Nackademin",
+                "Programme": "Web Developer Fullstack Open-source",
+                "examinationDate": "2021-05-31"
+            },
+            {
+                "schoolName": "IT-gymnasiet Södertörn",
+                "Programme": "IT, focus in network and networksecurity",
+                "examinationDate": "2011-06-05"
+            }
+        ]
+
+    },
+
+    "tabList": {
+        "profile": {
+            "tabLink": "About me",
+            "contents": "<h2>Hello and welcome!</h2><p>I'm a full-stack open-soruce web developer. I have a great sense of how IT works in its entirety, where I currently have cutting-edge expertise in networking and security, which I want to extend to having cutting-edge expertise in web development.</p><p>I love optimizing things to the maximum and I love learning new things every day. I also like to work in teams, as you learn so much faster and so much more than working alone. I like to share my knowledge with others, as I like to share the knowledge of others. </p><p>In my spare time I spend a lot at the computer, where I usually look for new things to learn in IT. I also love to cook, and would like to call myself a gourmet. I'm not going to hide that I'm a gamer too and like to play some games. </p><p> My goal in my career is to find a company, or start my own, where there is a nice atmosphere in the work team and that the vision is to develop quality systems and at the same time be flexible for customers. Where the company has the customer's focus and has the customer as a guiding star. Since I have experience from helpdesk and have had close contact with users, I know what users need and how they perceive systems that exist today. </p>"
+        },
+        "experience": {
+            "tabLink": "Experience",
+            "contents": [{
+                    "company": "Nacka kommun",
+                    "started": "2012-01-01",
+                    "ended": "ongoing",
+                    "title": "Service technician",
+                    "shortDescription": "IT-Support in Windows environment as well as system manager and technical manager for systems"
+                },
+                {
+                    "company": "Lexicon IT-konsult",
+                    "started": "2011-07-18",
+                    "ended": "2011-12-31",
+                    "title": "Consult",
+                    "shortDescription": "IT-Support in Windows environment"
+                }
+            ]
+        },
+
+        "skills": {
+            "tabLink": "Skills",
+            "contents": {
+                "Personal skills": [
+                    "Fastlearner",
+                    "Fluent speech and writing in English and Swedish",
+                    "Excellent problem solving skills",
+                    "Teamplayer",
+                    "Educational",
+                    "Dyslexia, I view dyslexia as a skill more than a disability, because it have assisted me to become more analytic"
+                ],
+                "Programming skills": {
+                    "JavaScript": "Excellent",
+                    "HTML": "Excelent",
+                    "CSS": "Great",
+                    "PHP": "Good",
+                    "NodeJS": "Good",
+                    "Python": "Good",
+                    "MySQL": "Good",
+                    "C++": "Novice",
+                    "LUA": "Novice",
+                    "C#": "Novice"
+                },
+                "Other technical skills": {
+                    "Windows-based OS": "Excellent",
+                    "Active Directory": "Great",
+                    "Domain Name System": "Great",
+                    "DHCP": "Great",
+                    "Linux-based OS": "Great",
+                    "Apple-based OS": "Good",
+                    "Networks": "Good",
+                    "Office365 Administration": "Good",
+                    "IIS": "Good",
+                    "NGINX": "Good"
+                }
+            }
+        },
+        "certificates": {
+            "tabLink": "Certificate",
+            "contents": [{
+                    "certificateName": "Microsoft Technology Associate: Networking Fundamentals, Exam 98-366",
+                    "Examinationer": "Certiport",
+                    "date": "2011-05-06"
+                },
+                {
+                    "certificateName": "ITIL Foundation Examination",
+                    "Examinationer": "Olingo Consulting AB",
+                    "date": "2013-10-30"
+                }
+            ]
+        },
+        "projects": {
+            "tabLink": "Project"
+        }
+    },
+
+    "misc": {
+        "britishLanguage": "British",
+        "swedishLanguage": "Swedish",
+        "changeLanguage": "Change Language",
+        "lastUpdated": "Last updated"
+    }
+
+
+}
